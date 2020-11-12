@@ -1,0 +1,122 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/tabbar/homePage/homePage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabbar/activity/activity",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabbar/SOS/SOS",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabbar/news/news",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/tabbar/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+	 
+    ],
+	"subpackages": [{
+		"root": "pages/homePage",
+		"pages": [{
+			"path": "demo/demo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}]
+	}],
+	// "preloadRule": {
+	// 	"pages/tabbar/homePage/homePage": {
+	// 		"network": "all",
+	// 		"packages": ["pages/homePage"]
+	// 	},
+	// 	"pages/tabbar/activity/activity": {
+	// 		"network": "all",
+	// 		"packages": ["pages/activity"]
+	// 	},
+	// 	"pages/tabbar/SOS/SOS": {
+	// 		"network": "all",
+	// 		"packages": ["pages/SOS"]
+	// 	},
+	// 	"pages/tabbar/news/news": {
+	// 		"network": "all",
+	// 		"packages": ["pages/news"]
+	// 	},
+	// 	"pages/tabbar/my/my": {
+	// 		"network": "all",
+	// 		"packages": ["pages/my"]
+	// 	}
+	// },
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/tabbar/homePage/homePage",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabbar/activity/activity",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "活动"
+			},
+			{
+				"pagePath": "pages/tabbar/SOS/SOS",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "道路救援"
+			},
+			{
+				"pagePath": "pages/tabbar/news/news",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/tabbar/my/my",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
