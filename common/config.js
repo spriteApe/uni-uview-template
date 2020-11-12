@@ -1,10 +1,8 @@
 let domainName = ''
 if (process.env.NODE_ENV === 'development') {
-	domainName = 'http://172.16.91.245'
-	domainName = 'https://cy.51api.dcqcjlb.com' //测试线
-	domainName = 'https://cy.dcqcjlb.com' //正式线
+	domainName = ''
 } else {
-	domainName = 'https://cy.dcqcjlb.com'
+	domainName = ''
 }
 
 let port = domainName.startsWith('https') ? '443' : '80'
